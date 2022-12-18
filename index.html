@@ -8,7 +8,126 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <title>CV</title>
   </head>
-  <body>
-    <h1 class="name">Shchurski Eduard</h1>
+  <body class="page-body">
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#strengths">Strengths</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="left-side">
+        <figure class="figure-left-side">
+          <img src="images/shchurskieduard-CV.jpg" width="400" height="460" class="photo" alt="Photo of Eduard Shchurski">
+        </figure>
+        <section class="contact" id="contact">
+          <h2 class="section-title">Contact</h2>
+          <ul class="contact__list">
+            <li class="contact__item">
+              Discord: <br>
+              edditeddie #3774
+            </li>
+            <li class="contact__item">
+              Linkedin:<a href="www.linkedin.com/in/shchurski-eduard" style="color: #FFFFFF">shchurski-eduard</a>
+            </li>
+            <li class="contact__item">
+              Email:<a href="mailto:shchurskied@gmail.com" style="color: #FFFFFF">shchurskied@gmail.com</a>
+            </li>
+            <li class="contact__item">
+              Address:<br>
+              <span>Brest, Belarus</span>
+            </li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul class="education__list">
+            <li class="education__item">
+              2013-2018 <br>Brest State Technical University<br>
+              Industrial and civil construction
+            </li>
+            <li class="education__item">
+              2022 february - 2022 oktober <br> IntellectFox - Online course on Front-end development
+            </li>
+            <li class="education__item">
+              2022 december <br> RS School - JS/FE Pre-School 2022Q4
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="right-side">
+        <section class="page-title">
+          <h1 class="main-title">Eduard <br>Shchurski</h1>
+          <p>Front-End developer</p>
+        </section>
+        <section class="about-me" id="about-me">
+          <h2 class="section-title">About me</h2>
+          <p>
+            I am 26 years old, I work as a line operator. I think that my actual job will lead me to stagnation some day or other. I really need in activities where I can develop during my life. <br>
+            I really like the IT industry. I want to be a part of it. My goal is to get the coveted offer and become a front-end developer.
+          </p>
+        </section>
+        <section class="skills" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="skills__list">
+            <li>HTML/HTML5</li>
+            <li>CSS3/SCSS</li>
+            <li>JavaScript/ES6</li>
+            <li>React</li>
+            <li>Git</li>
+            <li>Webpack</li>
+            <li>English - A1</li>
+          </ul>
+        </section>
+        <section class="key-strengths" id="strengths">
+          <h2 class="section-title">Key strengths</h2>
+          <ul class="key-strengths__list">
+            <li>Hardworking</li>
+            <li>Responsible</li>
+            <li>Sociable</li>
+            <li>Quick learner</li>
+            <li>Goal-oriented</li>
+            <li>Conscientious</li>
+          </ul>
+        </section>
+<!--        <section class="code-example" id="code-example">
+          <h2 class="section-title">Code example</h2>
+        </section>-->
+        <section class="projects" id="projects">
+          <h2 class="section-title">My projects</h2>
+          <div class="projects__list">
+            <div class="projects__item">
+              <a href="https://github.com/edditeddie/if-js" target="_blank">
+                <img src="images/Triphouse.png" width="880" alt="Triphouse-landing page screenshot" class="projects__image">
+                <div class="projects__container">
+                  <h3 class="projects__title">Triphouse-landing page</h3>
+                  <div class="projects__technologies">
+                    <img src="images/icons-html.png" alt="HTML5" title="HTML5">
+                    <img src="images/icons-css.png" alt="CSS3" title="CSS3">
+                    <img src="images/icons-javascript.png" alt="JavaScript" title="JavaScript">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <a class="footer__github" href="https://github.com/edditeddie" style=color:#FFFFFF; target="_blank">
+        My GitHub
+      </a>
+      <p class="footer__year">2022</p>
+      <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
+        <img src="images/rs_school_js.svg" width="86" height="32" alt="RS School">
+      </a>
+    </footer>
   </body>
 </html>

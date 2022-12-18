@@ -9,7 +9,206 @@
     -moz-box-sizing: border-box;
 }
 
-.name{
-    size: 20px;
-    color: blueviolet;
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    url("/fonts/Ubuntu-Light") format("woff2")
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 500;
+url("/fonts/Ubuntu-Medium") format("woff2")
+}
+
+@media (min-width: 940px) {
+    .page-body {
+        max-width: 1280px;
+    }
+}
+
+.page-body {
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    background-color: #838385D1;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+}
+
+.left-side {
+    width: 400px;
+    display: block;
+    background-color: #343945;
+}
+
+.right-side {
+    width: 880px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.page-title {
+    margin: 125px 80px 125px 60px;
+}
+
+.page-title p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.section-title {
+    position: relative;
+    margin: 0 0 40px 0;
+    padding-left: 60px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.about-me p {
+    margin: 0 60px 40px 60px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.skills__list {
+    margin: 0 60px;
+    padding: 0 0 0 20px;
+}
+
+ul.skills__list {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0 0 40px 60px ;
+    font-weight: 400;
+    color: black;
+}
+
+
+ul.key-strengths__list {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0 0 40px 60px ;
+    font-weight: 400;
+    color: black;
+}
+
+.projects__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 400;
+    color: black;
+    list-style-type: none;
+}
+
+.contact {
+    padding: 44px 0 54px;
+    background-color: #343945;
+}
+
+.left-side .section-title {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.contact__list {
+    list-style: none;
+    margin: 0 60px 0 60px;
+    padding: 0;
+}
+
+.contact__item {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.education {
+    padding: 54px 0;
+    background-color: #343945;;
+}
+
+.education__list {
+    margin: 0 60px 0 60px;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.education__item {
+    margin-bottom: 25px;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px 20px 60px;
+    color: white;
+    background-color: #1e232c;
+}
+
+.footer__github::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/github.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
